@@ -1,4 +1,4 @@
-package com.example.bookmanagementsystem.book;
+package com.example.bookmanagementsystem.book.entity;
 
 import jakarta.persistence.*;
 import lombok.AccessLevel;
