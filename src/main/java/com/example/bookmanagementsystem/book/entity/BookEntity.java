@@ -12,7 +12,7 @@ import java.time.LocalDate;
 @Getter
 @Table(name = "book")
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
-public class Book {
+public class BookEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -31,7 +31,7 @@ public class Book {
 
 
     @Builder
-    public Book(String title, String author, int price, LocalDate publishedDate) {
+    public BookEntity(String title, String author, int price, LocalDate publishedDate) {
         this.title = title;
         this.author = author;
         this.price = price;
