@@ -1,1 +1,163 @@
-@charset "UTF-8";
+/* 전역 스타일 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+}
+
+body {
+    background-color: #f5f6fa;
+    color: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* 상단 네비게이션 바 */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 2px solid #eee;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #353b48;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.navbar a:last-child {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+}
+
+/* 중앙 정렬 컨테이너 (로그인, 회원가입, 등록, 수정용) */
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px;
+}
+
+/* 인덱스/목록용 넓은 컨테이너 (메인, 목록, 상세용) */
+.index-container {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    max-width: 800px;
+    min-height: 500px;
+}
+
+h2 {
+    margin-bottom: 25px;
+    color: #2f3640;
+    text-align: center;
+}
+
+/* 입력 박스 스타일 */
+.input-box {
+    margin-bottom: 20px;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dcdde1;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border 0.3s;
+}
+
+.input-box input:focus {
+    outline: none;
+    border-color: #487eb0;
+}
+
+/* 카드 UI 스타일 (메뉴 및 목록 아이템) */
+.card {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #f1f2f6;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    margin-bottom: 8px;
+    font-size: 1.2rem;
+}
+
+.card h3 a {
+    text-decoration: none;
+    color: #487eb0;
+}
+
+.card p {
+    color: #718093;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* 버튼 스타일 */
+.btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #487eb0;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background-color: #40739e;
+}
+
+/* 하단 링크 (회원가입/로그인 유도) */
+.bottom-link {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.bottom-link a {
+    color: #487eb0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* 기타 유틸리티 */
+strong {
+    color: #353b48;
+}
+
+a {
+    color: inherit;
+}
